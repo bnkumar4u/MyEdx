@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    android:padding="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/b"/>
+    <TextView
+        android:paddingEnd="20dp"
+        android:gravity="right"
+        android:textColor="@color/white"
+        android:text="@string/VERIFY"
+        android:background="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <TextView
+
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:text="@string/microsoft"
+        android:textColor="#333232"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="25sp"
+        android:text="@string/introduction_to_python"
+        android:textColor="#252424"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:text="@string/current_n_self_placed"
+        android:textColor="#252424"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:paddingEnd="20dp"
+        android:gravity="right"
+        android:textColor="@color/white"
+        android:background="#0f930f"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bnk.myedx.CourseDetailActivity">
+    <TextView
+        android:gravity="center_vertical"
+        android:textColor="@color/blue"
+        android:paddingLeft="10dp"
+        android:textSize="25sp"
+        android:text="@string/discover"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <ScrollView
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/b"/>
+    <TextView
+        android:paddingTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:text="@string/introduction_to_python_fundamentals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:lineSpacingExtra="2dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#3b3a3a"
+            android:textSize="18sp"
+            android:text="@string/build_on_what_you_learned_in_the_introduction_to_python_absolute_beginner_course_and_dig_into_data_structure_basics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:text="@string/enroll_now"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:paddingTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:text="@string/about_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:lineSpacingExtra="2dp"
+            android:paddingTop="10dp"
+            android:textColor="#3b3a3a"
+            android:textSize="18sp"
+            android:text="@string/descriptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
