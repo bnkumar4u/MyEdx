@@ -3,6 +3,7 @@ package com.bnk.myedx;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -54,7 +55,7 @@ public class CoursesFragment extends Fragment {
                 TextView about= view.findViewById(R.id.about);
                 ImageView image=view.findViewById(R.id.course_image);
 
-                Bitmap bitmap = image.getDrawingCache();
+                Bitmap bitmap = ((BitmapDrawable)image.getDrawable()).getBitmap();
                 ByteArrayOutputStream _bs = new ByteArrayOutputStream();
                 bitmap.compress(Bitmap.CompressFormat.PNG, 50, _bs);
                 Intent intent =new Intent(getContext(),CourseDetailActivity.class);

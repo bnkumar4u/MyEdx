@@ -1,6 +1,9 @@
 package com.bnk.myedx;
 
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -22,6 +25,8 @@ import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
+
+import java.io.ByteArrayOutputStream;
 
 
 public class DiscoverFragment extends Fragment {
@@ -59,6 +64,15 @@ public class DiscoverFragment extends Fragment {
                 TextView des= view.findViewById(R.id.desc);
                 TextView about= view.findViewById(R.id.about);
                 ImageView image=view.findViewById(R.id.course_image);
+
+                Bitmap bitmap = ((BitmapDrawable)image.getDrawable()).getBitmap();
+                ByteArrayOutputStream _bs = new ByteArrayOutputStream();
+                bitmap.compress(Bitmap.CompressFormat.PNG, 50, _bs);
+                Intent intent =new Intent(getContext(),CourseDetailActivity.class);
+                intent.putExtra("name",name.getText()).putExtra("des",des.getText())
+                        .putExtra("about",about.getText());
+                intent.putExtra("byteArray", _bs.toByteArray());
+                startActivity(intent);
 
             }
 
