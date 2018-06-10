@@ -4,8 +4,9 @@
     android:padding="10dp"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
     <ImageView
+        android:id="@+id/course_image"
         android:scaleType="centerCrop"
         android:layout_width="match_parent"
         android:layout_height="120dp"
@@ -19,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="20dp" />
     <TextView
-
+        android:id="@+id/course_company"
         android:padding="5dp"
         android:textSize="20sp"
         android:text="@string/microsoft"
@@ -27,6 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:id="@+id/course_name"
         android:textSize="25sp"
         android:text="@string/introduction_to_python"
         android:textColor="#252424"

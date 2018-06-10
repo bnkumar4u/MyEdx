@@ -25,7 +25,7 @@ public class SimplePagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return new CoursesFragment();
             case 1:
-                return  new CoursesFragment();
+                return  new DiscoverFragment();
             default:
                 return null;
         }
